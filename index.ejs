@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You-Tube Project</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .outerbox{
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to top left, rgb(25, 210, 201), rgb(155, 202, 202));
+        }
+
+        .innerbox{
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+            /* vertically align karia lagi */
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px 40px;
+            background: linear-gradient(to top left, #ffffff, #ffffff33);
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px #2777a5;
+            z-index: 2;
+            backdrop-filter: blur(8px);
+        }
+
+        .signup h1{
+            font-size: 2.5rem;
+            color: #212121;
+
+        }
+
+        .signup p{
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .signbody{
+            margin: 20px 0;
+        }
+
+        .signbody p{
+            margin: 10px 0;
+        }
+
+        .signbody p label{
+            display: block;
+            font-weight: bold;
+        }
+
+        .signbody p input{
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #cccc;
+            border-radius: 4px ;
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+
+        #submit{
+            background-color: #3498db;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        #submit:hover{
+            background-color: #2773a5;
+        }
+
+        .signfooter{
+            color: #555;
+            text-align: center;
+        }
+
+        .signfooter p a{
+            color: #2773a5 ;
+            text-decoration: none;
+        }
+
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background: linear-gradient(to top right, #ffffff33, #ffffff);
+            position: absolute;
+        }
+
+        .c1{
+            top: 40px;
+            left: 40px;
+        }
+
+        .c2{
+            bottom: 200px;
+            right: 50px;
+        }
+
+        .f1{
+            position: relative;
+            top: 250px;
+        }
+
+        .f1::after{
+            content: 'Only Sign-UP Page';
+            color: #555;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- glassomorphic pages ... modernised sign-up page -->
+    <div class="outerbox">
+        <div class="innerbox">
+            <header class="signup">
+                <h1>Sign-UP</h1>
+                <p>It just takes 30 seconds</p>
+            </header>
+
+            <main class="signbody">
+                <form method="post" action="/">
+                    <p>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Enter Name Here" required name="fname">
+                    </p>
+
+                    <p>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" placeholder="Enter E-Mail Here" required name="email">
+                    </p>
+
+                    <p><label for="password">Enter Password</label>
+                       <input type="text" id="password" placeholder="Enter Strong Password" required name="pass">
+                    </p>
+                    <P><input type="submit" id="submit" value="Create Account"></P>
+                </form>
+            </main>
+            <hr>
+            <footer class="signfooter">
+                <p>Already have an Acoount ?  <a href="#">Login</a> </p>
+            </footer>
+        </div>
+
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+
+        <footer class="f1"></footer>
+
+    </div>
+</body>
+</html>
